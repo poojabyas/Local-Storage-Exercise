@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Exercise</title>
+    <style>
+        body {
+            border: 1px solid black;
+            margin: 500px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            background-color: antiquewhite;
+             
+         }
+             table, th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            border-collapse: collapse;
+            width: 50%;
+
+         }
+
+            button{
+            padding: 7px;
+            font-size: 18px;
+            margin: 4px;
+         }
+            input{
+                font-size: 18px;
+                padding: 7px;
+                margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" required>
+        <br>
+        <br>
+        <label style="margin-left: 10px;"  for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+         <br>
+         <br>
+        <button style="margin-left: 125px;" type="submit">Submit</button>
+      </form>
+      <br>
+      <button style="margin-left: 30px;" onclick="retrieveAndDisplay()">Retrieve and Display</button>
+    
+      <div id="displayArea"></div>
+</body>
+</html>
+
+<script src="index.js"></script>
